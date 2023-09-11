@@ -362,7 +362,7 @@ class Note
 	}
 	
 	// Метод отправки писма на email
-	public static function sendEmail($to = 'test@bk', $url = '123456789') {
+	public static function sendEmail($to = 'test@mail', $url = '123456789') {
 
 		// тема письма
 		$subject = 'Активация в Note';
@@ -374,7 +374,7 @@ class Note
 		  <title>Активация в блокноте</title>
 		</head>
 		<body>
-		  <p>Для активации перейдите по ссылке <a href='http://todolist/note/registration/$url' target='_blank'>Активация</a></p>
+		  <p>Для активации перейдите по ссылке <a href='http://note/registration/$url' target='_blank'>Активация</a></p>
 		</body>
 		</html>
 		";
@@ -382,13 +382,7 @@ class Note
 		// Для отправки HTML-письма должен быть установлен заголовок Content-type
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-
-		/*// Дополнительные заголовки
-		$headers[] = 'To: Mary <mary@example.com>, Kelly <kelly@example.com>';
-		$headers[] = 'From: Birthday Reminder <birthday@example.com>';
-		$headers[] = 'Cc: birthdayarchive@example.com';
-		$headers[] = 'Bcc: birthdaycheck@example.com';*/
-
+		
 		// Отправляем
 		return mail($to, $subject, $message, $headers);
 	}

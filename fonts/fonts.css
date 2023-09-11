@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "isadora-m-bold";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("1isadora-m-bold"),
+		/* Если не получилось, загрузит ttf */
+       url("1isadora-m-bold.ttf") format("woff2"),
+		/* Если браузер не поддерживает ttf, загрузит woff2 */
+       url("1isadora-m-bold.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+       url("1isadora-m-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "brushtype-normal";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("brushtype-normal"),
+		/* Если не получилось, загрузит ttf */
+       url("brushtype-normal.ttf") format("woff2"),
+		/* Если браузер не поддерживает ttf, загрузит woff2 */
+       url("brushtype-normal.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+       url("brushtype-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "olgactt";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("olgactt"),
+		/* Если не получилось, загрузит ttf */
+       url("olgactt.ttf") format("woff2"),
+		/* Если браузер не поддерживает ttf, загрузит woff2 */
+       url("olgactt.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+       url("olgactt.woff") format("woff");
+}
